@@ -19,8 +19,6 @@ The Skills++ Event Booking System provides RESTful API endpoints for user authen
 
 ## Table of Contents
 - [Overview](#overview)
-- [Features](#features)
-- [Getting Started](#getting-started)
 - [Usage with Postman](#usage-with-postman)
 - [Response Formats](#response-formats)
 - [Error Handling](#error-handling)
@@ -30,54 +28,18 @@ The Skills++ Event Booking System provides RESTful API endpoints for user authen
 ## Overview
 The **Skills++ Event Booking System** is a Node.js-based REST API built with Express and Mongoose, using MongoDB Atlas for data storage. It allows users to register, log in, browse, and book events, while admins can manage events. The system uses JWT for authentication and supports a specific database setup for testing, preserving existing data while populating and manipulating records as required.
 
-## Features
-- User and admin registration/login with JWT authentication.
-- Event creation, updating, and deletion (admin-only).
-- Event booking and cancellation for authenticated users.
-- Database setup with 10 users, 5 admins, 20 events, and specific deletions (5 users, 2 admins, user 1, bookings, reviews) with one new user added.
-- Data persistence for manual API testing.
-- Runs on port 3000 by default.
-
-## Getting Started
-
-### Prerequisites
-- **Node.js**: v14 or higher
-- **MongoDB Atlas**: Account with `readWrite` permissions for the `eventBooking` database
-- **Postman**: For testing API endpoints
-- **Internet connection**: To connect to MongoDB Atlas
 
 ### Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-repo>/skills-.git
-   cd skills-/week3
+   git clone https://github.com/Dibyajyoti1515/event_booking.git
    ```
 
 2. **Install Dependencies**:
    ```bash
    npm install express mongoose dotenv cors bcryptjs jsonwebtoken
    ```
-
-5. **Project Structure**:
-   ```
-   week3/
-   ├── config/
-   │   └── db.js
-   ├── middleware/
-   │   └── auth.js
-   ├── models/
-   │   ├── User.js
-   │   ├── Event.js
-   │   └── Booking.js
-   ├── routes/
-   │   ├── auth.js
-   │   ├── events.js
-   │   └── bookings.js
-   ├── .env
-   ├── server.js
-   └── package.json
-   ```
-
+   
 ### Start the Server
 ```bash
 npm start
