@@ -1,5 +1,11 @@
 # Skills++
 
+## Render uri
+bash
+```
+https://event-booking-rstc.onrender.com/
+```
+
 ## Event Booking System API Routes
 
 The Skills++ Event Booking System provides RESTful API endpoints for user authentication, event management, and booking operations. Below is a table of all available routes:
@@ -51,7 +57,7 @@ Use Postman to test the API endpoints. Below are example requests for key endpoi
 
 ### 1. Register a New User
 - **Method**: POST
-- **URL**: `http://localhost:3000/api/auth/register`
+- **URL**: `https://event-booking-rstc.onrender.com/api/auth/register`
 - **Headers**: `Content-Type: application/json`
 - **Body** (raw JSON):
   ```json
@@ -75,7 +81,7 @@ Use Postman to test the API endpoints. Below are example requests for key endpoi
 
 ### 2. Log in a User
 - **Method**: POST
-- **URL**: `http://localhost:3000/api/auth/login`
+- **URL**: `https://event-booking-rstc.onrender.com/api/auth/login`
 - **Headers**: `Content-Type: application/json`
 - **Body** (raw JSON):
   ```json
@@ -99,7 +105,7 @@ Use Postman to test the API endpoints. Below are example requests for key endpoi
 
 ### 3. Create an Event (Admin Only)
 - **Method**: POST
-- **URL**: `http://localhost:3000/api/events`
+- **URL**: `https://event-booking-rstc.onrender.com/api/events`
 - **Headers**:
   - `Content-Type: application/json`
   - `Authorization: Bearer <ADMIN_TOKEN>`
@@ -126,7 +132,7 @@ Use Postman to test the API endpoints. Below are example requests for key endpoi
 
 ### 4. Book an Event
 - **Method**: POST
-- **URL**: `http://localhost:3000/api/bookings`
+- **URL**: `https://event-booking-rstc.onrender.com/api/bookings`
 - **Headers**:
   - `Content-Type: application/json`
   - `Authorization: Bearer <USER_TOKEN>`
@@ -148,7 +154,7 @@ Use Postman to test the API endpoints. Below are example requests for key endpoi
 
 ### 5. Get All Events
 - **Method**: GET
-- **URL**: `http://localhost:3000/api/events`
+- **URL**: `https://event-booking-rstc.onrender.com/api/events`
 - **Headers**: None
 - **Response** (200 OK):
   ```json
@@ -166,7 +172,7 @@ Use Postman to test the API endpoints. Below are example requests for key endpoi
 
 ### 6. Get User Bookings
 - **Method**: GET
-- **URL**: `http://localhost:3000/api/bookings/my-bookings`
+- **URL**: `https://event-booking-rstc.onrender.com/api/bookings/my-bookings`
 - **Headers**: `Authorization: Bearer <USER_TOKEN>`
 - **Response** (200 OK):
   ```json
